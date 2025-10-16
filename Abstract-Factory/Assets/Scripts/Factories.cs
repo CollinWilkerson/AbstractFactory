@@ -11,15 +11,15 @@ public class IndeFactory: AbstractFactory
 {
     public IShooter SelectShooter()
     {
-        return null;
+        return new Ultrakill();
     }
     public IRPG SelectRPG()
     {
-        return null;
+        return new Deltarune();
     }
     public IPlatformer SelectPlatformer()
     {
-        return null;
+        return new CaveStory();
     }
 }
 
@@ -27,14 +27,14 @@ public class AAAFactory: AbstractFactory
 {
     public IShooter SelectShooter()
     {
-        return null;
+        return new Titanfall();
     }
     public IRPG SelectRPG()
     {
-        return null;
+        return new ClaireObscure();
     }
     public IPlatformer SelectPlatformer()
     {
-        return null;
+        return new Ratchet();
     }
 }

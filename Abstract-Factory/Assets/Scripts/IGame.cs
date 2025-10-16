@@ -1,15 +1,29 @@
 using UnityEngine;
-public interface IShooter
+
+public enum GameType
+{
+    none,
+    Shooter,
+    RPG,
+    Platformer
+}
+
+public interface IGame
+{
+    public Sprite GetCover();
+}
+
+public interface IShooter : IGame
 {
     public string GetBestGun();
 }
 
-public interface IRPG
+public interface IRPG : IGame
 {
-    public string GetBestCharater();
+    public string GetBestCharacter();
 }
 
-public interface IPlatformer
+public interface IPlatformer : IGame
 {
     public string GetBestLevel();
 }
